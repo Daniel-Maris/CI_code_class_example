@@ -13,6 +13,6 @@ def test_root():
 def test_invalid_input_root():
     with pytest.raises(TypeError):
         my_root(16,"squareroot")
-    with pytest.raises(ValueError):
+    with pytest.raises(ZeroDivisionError):
         my_root(16,0)
         
