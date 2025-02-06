@@ -1,3 +1,4 @@
+import pytest
 from mymath import my_power, my_root
 
 
@@ -7,3 +8,11 @@ def test_power():
 
 def test_root():
     assert my_root(9, 2) == 3
+
+
+def test_invalid_input_root():
+    with pytest.raises(TypeError):
+        my_root(16,"squareroot")
+    with pytest.raises(ValueError):
+        my_root(16,0)
+        
