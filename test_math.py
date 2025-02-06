@@ -7,3 +7,4 @@ def test_power():
 
 def test_root():
     assert my_root(9, 2) == 3
+    
